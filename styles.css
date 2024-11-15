@@ -1,6 +1,7 @@
 html{
     background: url("./img/jupyter.jpg") no-repeat center fixed;
     background-size: cover;
+    background-color: black;
 }
 
 /*Reset CSS*/
@@ -9,6 +10,7 @@ html{
     padding: 0px;
     font-family: Avenir, sans-serif;
     box-sizing: border-box;
+    color: black;
 }
 
 header{
@@ -23,18 +25,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.5);
 }
 
-h1{
-    color: white;
-}
-
-h2{
+.name{
     width: 20%;
     letter-spacing: 1.5px;
     text-align: center;
-    color: white;
 }
 
 /** NavBar **/
@@ -46,13 +43,27 @@ nav{
     width: 80%;
 }
 
-section{
+a{
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 20px;
+    text-decoration: none;
     background: rgba(0,0,0,0.5);
 }
 
-a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
+section{
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+}
 
+.moi{
+    width: 90%;
+}
+
+section>p{
+    margin: 1%;
 }
