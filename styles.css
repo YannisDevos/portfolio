@@ -1,9 +1,13 @@
 :root{
-    --secondaryColor : violet;
+    --primaryColor : white;
+    --secondaryColor : orange;
+    --thirColor : black;
+
+    --bRadius : 15px;
 }
 
 html{
-    background: url("./img/jupyter.jpg") no-repeat center fixed;
+    background: url("./img/background/planet.jpg") no-repeat center fixed;
     background-size: cover;
     background-color: black;
 }
@@ -14,11 +18,17 @@ html{
     padding: 0px;
     font-family: Avenir, sans-serif;
     box-sizing: border-box;
-    color: white;
 }
 
 header{
     margin: 1%;
+}
+
+.name{
+    color: var(--primaryColor);
+    width: 20%;
+    letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .navigate{
@@ -32,11 +42,6 @@ header{
     background: rgba(0,0,0,0.7);
 }
 
-.name{
-    width: 20%;
-    letter-spacing: 1.5px;
-    text-align: center;
-}
 
 /** NavBar **/
 
@@ -54,7 +59,7 @@ a{
 }
 
 section{
-    border-radius: 15px;
+    border-radius: var(--bRadius);
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -62,21 +67,71 @@ section{
     background: rgba(0,0,0,0.7);
     margin-top: 3%;
     margin-bottom: 3%;
-    width: 90%;
+    width: 95%;
+}
+
+section>h2{
+    color: var(--primaryColor);
 }
 
 section h3{
     color: var(--secondaryColor);
 }
 
-.formation{
-    display: flex;
+.presentation{
+    color: var(--primaryColor);
 }
 
-table{
-    width: 100%;
+.moi{
+    display: inline-flex;
+}
+
+.photo{
+    width: 25%;
+}
+
+.photo>img {
+    border-radius: 100%;
+}
+
+.text{
+    padding: 1%;
+    width: 80%;
+    font-size: x-large;
+}
+
+.text>p{
+    text-align: justify;
+}
+
+.formations>div{
+    padding: 1%;
+    width: 25%;
+    margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
+    background: rgba(255,255,255,0.7);
+    border-radius: var(--bRadius);
+}
+
+.projName{
+    padding: 1%;
+    color: var(--secondaryColor);
+}
+
+.projects>div{
+    transition: 0.1s;
+    display: inline-block;
+    background : rgba(255,255,255,0.7);
+    padding: 1%;
+    margin: 1%;
+    width: 25%;
+    border-radius: var(--bRadius);
+}
+
+.projects>div:hover{
+    transition: 0.3s;
+    background: rgba(255,255,255,1);
 }
 
 
