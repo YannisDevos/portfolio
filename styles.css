@@ -7,9 +7,9 @@
 }
 
 html{
-    background: url("./img/background/planet.jpg") no-repeat center fixed;
+    background: url("./img/background/stars.jpg") no-repeat center fixed;
     background-size: cover;
-    background-color: black;
+    background-color: white;
 }
 
 /*Reset CSS*/
@@ -87,7 +87,11 @@ section h3{
 }
 
 .photo{
-    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .photo>img {
@@ -110,7 +114,7 @@ section h3{
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.5);
     border-radius: var(--bRadius);
 }
 
@@ -119,19 +123,20 @@ section h3{
     color: var(--secondaryColor);
 }
 
-.projects>div{
+.realisations>div{
     transition: 0.1s;
     display: inline-block;
-    background : rgba(255,255,255,0.7);
+    background : rgba(255,255,255,0.5);
     padding: 1%;
     margin: 1%;
     width: 25%;
     border-radius: var(--bRadius);
 }
 
-.projects>div:hover{
+.realisations>div:hover{
     transition: 0.3s;
     background: rgba(255,255,255,1);
+    cursor: pointer;
 }
 
 
