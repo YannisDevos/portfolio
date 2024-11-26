@@ -9,24 +9,28 @@
     <div class="navigate">
         <h2 class="name">Yannis Devos</h2>
         <nav>
-            <a href="">Accueil</a>
-            <a href="">Formations</a>
-            <a href="">Réalisations</a>
-            <a href="">Compétences</a>
-            <a href="">Contact</a>
+            <a href="#pres">Accueil</a>
+            <a href="#form">Formations</a>
+            <a href="#real">Réalisations</a>
+            <a href="#comp">Compétences</a>
+            <a href="#cont">Contact</a>
         </nav>
     </div>
 </header>
 <body>
     <script src="js/script.js"></script>
 
-    <section class="presentation">
+
+
+        <!--    PRESENTATION    -->
+
+    <section class="presentation" id="pres">
         <div class="moi">
             <div class="photo">
                 <img src="./img/upscaledPhoto.jpg" alt="PHOTO" width="300" height="300">
             </div>
             <div class="text">
-                <h1>Bonjour</h1>
+                <h1>Hello !</h1>
 
                 <br><hr><br>
 
@@ -39,26 +43,51 @@
         </div>
     </section>
 
-    <section class="formations">
+
+
+        <!--    FORMATIONS    -->
+
+    <section class="formations" id="form">
         <h2>Mes Formations</h2>
         <br><hr>
 
-        <div>
-            <h3>IUT Informatique</h3>
-            <p>2023 - <i><b>Aujourd'hui</b></i></p>
-            <br>
-            <h4>Institut Universitaire de Technologie de Lille</h4>
+        <div class="iut">
+
+            <div class="iutLogo">
+                <a href="https://iut.univ-lille.fr/choisir-sa-formation?tx_ulcof_cof%5Baction%5D=show&tx_ulcof_cof%5Bcontroller%5D=ListFormation&tx_ulcof_cof%5BformItem%5D=fr-00082372"><img class="formLogo" src="./img/formationLogo/iut.jpg"></a>
+            </div>
+
+            <div class="txt">
+                <br>
+                <h2>BUT Informatique</h2>
+                <h2>2023 - <i><b>Aujourd'hui</b></i></h2>
+                <h2><a target="_blank" href="https://www.google.fr/maps/place/I.U.T.A.,+59650+Villeneuve-d'Ascq/@50.6136611,3.1342569,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2d64906f5e70f:0xff959bb836100c16!8m2!3d50.6136611!4d3.1368318!16s%2Fg%2F1tfqkjyb?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Institut Universitaire de Technologie de Lille</a></h2>
+                <br>
+            </div>
         </div>
-        <div>
-            <h3>Baccalauréat général (Spécialité NSI et SI)</h3>
-            <p>2020-2023</p>
-            <br>
-            <h4>Lycée Jean Rostand Roubaix</h4>
+
+        <div class="jr">
+
+            <div class="jrLogo">
+                <a href="https://lg-jean-rostand-roubaix.59.ac-lille.fr/"><img class="formLogo" src="./img/formationLogo/jr.png"></a>
+            </div>
+
+            <div class="txt">
+                <br>
+                <h2>Baccalauréat général (Spécialité NSI et SI)</h2>
+                <h2>2020 - 2023</h2>
+                <h2><a target="_blank" href="https://www.google.fr/maps/place/Lyc%C3%A9e+Jean+Rostand/@50.6964569,3.194057,17z/data=!3m1!4b1!4m6!3m5!1s0x47c32898d71ca93f:0xeeb170fbb38106bf!8m2!3d50.6964569!4d3.1966319!16s%2Fg%2F120n2w33?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"> Lycée Jean Rostand Roubaix</a></h2>
+                <br>
+            </div>
         </div>
     </section>
 
-    <section class="realisations">
-        <h2>Mes réalisations</h2>
+
+
+        <!--    REALISATIONS    -->
+
+    <section class="realisations" id="real">
+        <h2>Mes Réalisations</h2>
         <br><hr>
 
         <<br><br><br><br>
@@ -67,27 +96,48 @@
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade" style="display: block">
+
+            <div class="mySlides" style="display: block">
                 <center>
                     <div class="slide-img">
-                        <img src="./img/projectLogo/Kfind3.png" style="width:75%">
+                        <img src="./img/projectLogo/soq.png" style="width:75%">
                         <br>
-                        <div class="slidetext">KFind</div>
+                        <div class="slidetext">Space Of Questions</div>
                     </div>
                 </center>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <center>
                     <div class="slide-img">
-                        <img src="./img/projectLogo/maqr.ico" style="width:75%">
+                        <img src="./img/projectLogo/blizzard.png" style="width:75%">
+                        <br>
+                        <div class="slidetext">Site de co-voiturage</div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="mySlides">
+                <center>
+                    <div class="slide-img">
+                        <img src="./img/projectLogo/lamap.png" style="width:75%">
+                        <br>
+                        <div class="slidetext">Làmap</div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="mySlides">
+                <center>
+                    <div class="slide-img">
+                        <img src="./img/projectLogo/maqr.png" style="width:75%">
                         <br>
                         <div class="slidetext">Maqr</div>
                     </div>
                 </center>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <center>
                     <div class="slide-img">
                         <img src="./img/projectLogo/logoPirattack.webp" style="width:71.10%">
@@ -97,12 +147,12 @@
                 </center>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <center>
                     <div class="slide-img">
-                        <img src="./img/projectLogo/maqr.ico" style="width:75%">
+                        <img src="./img/projectLogo/Kfind3.png" style="width:75%">
                         <br>
-                        <div class="slidetext">Maqr2</div>
+                        <div class="slidetext">KFind</div>
                     </div>
                 </center>
             </div>
@@ -119,39 +169,9 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-
-
-
-
-
-<!--        <div>-->
-<!--            <img src="./img/projectLogo/maqr.ico" alt="PROJECT LOGO"width="128" height="128">-->
-<!--            <h2 class="projName">Maqr</h2>-->
-<!--        </div>-->
-
-<!--        <div>-->
-<!--            <img src="./img/projectLogo/Kfind3.png" alt="PROJECT LOGO" width="128" height="128">-->
-<!--            <h2 class="projName">KFind</h2>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <img src="./img/projectLogo/logoPirattack.webp" alt="PROJECT LOGO" width="128" height="128">-->
-<!--            <h2 class="projName">Pirattack</h2>-->
-<!--        </div>-->
-
-<!--        <div>-->
-<!--            <img src="" alt="PROJECT LOGO" width="128" height="128">-->
-<!--            <h2 class="projName">Làmap</h2>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <img src="" alt="PROJECT LOGO" width="128" height="128">-->
-<!--            <h2 class="projName">Site de co-voiturage</h2>-->
-<!--        </div>-->
-
-<!--        <div>-->
-<!--            <img src="" alt="PROJECT LOGO" width="128" height="128">-->
-<!--            <h2 class="projName">Space of Questions</h2>-->
-<!--        </div>-->
 
     </section>
 

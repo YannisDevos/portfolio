@@ -7,7 +7,7 @@
 }
 
 html{
-    background: url("./img/background/stars.jpg") no-repeat center fixed;
+    background: url("./img/background/planet.jpg") no-repeat center fixed;
     background-size: cover;
     background-color: white;
 }
@@ -53,8 +53,12 @@ nav{
 }
 
 a{
-    font-size: 20px;
     text-decoration: none;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 20px;
     color: var(--secondaryColor);
 }
 
@@ -74,6 +78,7 @@ section:not(.realisations), .realisations>h2{
 }
 
 section>h2{
+    font-size: xx-large;
     color: var(--primaryColor);
 }
 
@@ -111,37 +116,79 @@ section h3{
     text-align: justify;
 }
 
-.formations>div{
-    padding: 1%;
-    width: 25%;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(255,255,255,0.5);
-    border-radius: var(--bRadius);
+.txt b{
+    color: var(--secondaryColor);
 }
+
+.txt a{
+    color: grey;
+}
+
+.txt a:hover {
+    color: var(--secondaryColor);
+}
+
+
+
+
+
+/*  WIP  */
+
+.iut{
+    background: url("./img/iutBat.png") bottom;
+
+}
+
+.jr{
+    background: url("./img/jrBat.png") bottom;
+}
+
+.iut,.jr{
+    border: solid;
+    border-color: var(--primaryColor);
+    border-width: 10px;
+    width: 90%;
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    background-size: cover;
+}
+
+.txt{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--primaryColor);
+    margin-left: 5%;
+    border-radius: var(--bRadius);
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+.txt h2{
+    padding: 1%;
+}
+
+.formLogo{
+    transition: 0.2s;
+    border-radius: 50px;
+}
+
+.formLogo:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 75%;
+}
+
+
+
+
+/* -------------- */
 
 .projName{
     padding: 1%;
     color: var(--secondaryColor);
 }
-
-/*.realisations>div{*/
-/*    transition: 0.1s;*/
-/*    display: inline-block;*/
-/*    background : rgba(255,255,255,0.5);*/
-/*    padding: 1%;*/
-/*    margin: 1%;*/
-/*    width: 25%;*/
-/*    border-radius: var(--bRadius);*/
-/*}*/
-
-/*.realisations>div:hover{*/
-/*    transition: 0.3s;*/
-/*    background: rgba(255,255,255,1);*/
-/*    cursor: pointer;*/
-/*}*/
-
 
 section>p{
     margin: 1%;
@@ -181,10 +228,17 @@ section>p{
 }
 
 .slide-img{
+    transition: 0.2s;
+    cursor: pointer;
     border-radius: 50px;
     padding: 2% 1% 2% 1%;
     width: 50%;
     background: rgba(255,255,255,0.5);
+}
+
+.slide-img:hover{
+    transition: 0.5s;
+    background: rgba(255,255,255,1);
 }
 
 .slide-img>img{
@@ -216,7 +270,8 @@ section>p{
 .slidetext {
     color: #f2f2f2;
     font-size: 25px;
-    width: 50%;
+    padding: 2%;
+    width: max-content;
     text-align: center;
     background: rgba(0,0,0,0.7);
     border-radius: var(--bRadius);
@@ -243,13 +298,51 @@ section>p{
     background-color: var(--secondaryColor);
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*   LIKE NAVOPENED   */
+
+/*section{*/
+/*    display: none;*/
+/*}*/
+
+
+/*#pres:target{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*#form:target{*/
+/*    display: block;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*#real:target{*/
+/*    display: block;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*#comp:target{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*#cont:target{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
