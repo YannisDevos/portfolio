@@ -57,9 +57,20 @@ a{
 }
 
 nav a{
+    padding: 1%;
     font-weight: bold;
     font-size: 20px;
     color: var(--secondaryColor);
+    transition: 0.1s;
+}
+
+nav a:hover{
+    padding: 2%;
+    margin: -1%;
+    border-radius: 25px;
+    transition: 0.2s;
+    background-color: var(--secondaryColor);
+    color: white;
 }
 
 section{
@@ -67,22 +78,50 @@ section{
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    background: rgba(0,0,0,0.7);
     margin-top: 1%;
     margin-bottom: 1%;
     width: 95%;
 }
 
-section:not(.realisations), .realisations>h2{
+section:not(.realisations), .title{
     text-align: center;
 }
 
-section>h2{
+.element, .presentation{
+    border-radius: var(--bRadius);
+    margin: 2%;
+    padding: 1%;
+    background: rgba(0,0,0,0.7);
+}
+
+section>h2, .cont_title{
     font-size: xx-large;
     color: var(--primaryColor);
 }
 
+.test{
+    margin: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.test>div{
+    border-radius: var(--bRadius);
+    padding: 1%;
+    width: 20%;
+    background: rgba(0,0,0,0.7);
+}
+
+.element>h3{
+    font-size: x-large;
+    color: var(--primaryColor);
+}
+
 section h3{
+    color: var(--primaryColor);
+}
+
+.date{
     color: var(--secondaryColor);
 }
 
@@ -116,10 +155,6 @@ section h3{
     text-align: justify;
 }
 
-.txt b{
-    color: var(--secondaryColor);
-}
-
 .txt a{
     color: grey;
 }
@@ -144,12 +179,9 @@ section h3{
 }
 
 .iut,.jr{
-    border: solid;
-    border-color: var(--primaryColor);
-    border-width: 10px;
     width: 90%;
     display: inline-flex;
-    border-radius: 10px;
+    border-radius: var(--bRadius);
     padding: 2%;
     margin: 2%;
     background-size: cover;
@@ -181,10 +213,46 @@ section h3{
     opacity: 75%;
 }
 
-.competence{
+.comp_img{
+    background: rgba(0,0,0,0.7);
+    border-radius: var(--bRadius);
+    padding: 1%;
+    margin: 2%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    color: white;
+    justify-content: space-around;
+}
+
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 1%;
+    background: rgba(0,0,0,0.7);
+    border-radius: var(--bRadius);
+}
+
+section{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.R{
+    display: flex;
+    justify-content: start;
+}
+
+.L{
+    display: flex;
+    justify-content: end;
+}
+
+.comp_img>img{
+    width: 10%;
+}
+
+.contact>.element span{
+    color: var(--secondaryColor);
 }
 
 
@@ -344,11 +412,11 @@ section{
 }
 
 #comp:target{
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
 #cont:target{
-    display: flex;
+    display: block;
     justify-content: center;
 }
