@@ -99,17 +99,32 @@ section>h2, .cont_title{
     color: var(--primaryColor);
 }
 
-.test{
+.useFullLink{
     margin: 1%;
     display: flex;
     justify-content: space-around;
 }
 
-.test>div{
+.useFullLink>div{
+    transition: 0.3s;
     border-radius: var(--bRadius);
     padding: 1%;
     width: 20%;
     background: rgba(0,0,0,0.7);
+}
+
+.useFullLink>div>a>img{
+    width:50%;
+}
+
+.useFullLink>div>a{
+    width: 100%;
+}
+
+.useFullLink>div:hover{
+    transition: 0.2s;
+    width: 22.5%;
+    border-radius: 100px;
 }
 
 .element>h3{
