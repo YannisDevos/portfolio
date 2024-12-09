@@ -91,10 +91,47 @@ section:not(.realisations), .title{
     border-radius: var(--bRadius);
     margin: 2%;
     padding: 1%;
+}
+
+.element{
     background: rgba(0,0,0,0.7);
 }
 
-section>h2, .cont_title{
+.desc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc>.element{
+    max-width: max-content;
+    max-height: max-content;
+}
+
+.desc>.element>h1:not(.desc-title){
+    font-size: xx-large;
+}
+
+.desc>.element{
+    padding: 3%;
+}
+
+.desc-title{
+    font-size: xx-large;
+    color: var(--secondaryColor);
+}
+
+.desc-content>ul>li{
+    margin: 2%;
+    list-style: none;
+    font-size: x-large;
+}
+
+.desc-content>h1{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+section>h2, .cont_title, .presentation>.title>h2{
     font-size: xx-large;
     color: var(--primaryColor);
 }
@@ -142,32 +179,60 @@ section h3{
 
 .presentation{
     color: var(--primaryColor);
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interest{
+    display: flex;
+    justify-content: space-around;
+}
+
+.interest-img>img{
+    width: 50%;
+}
+
+.interest-title{
+    color: var(--secondaryColor);
+    padding: 2%;
 }
 
 .moi{
     display: inline-flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.moi>.element{
+    width: 75%;
 }
 
 .photo{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .photo>img {
-    border-radius: 100%;
+    border-style: double;
+    border-width: 10px;
+    border-color: var(--secondaryColor);
+    border-radius: 10%;
 }
 
 .text{
-    padding: 1%;
-    width: 80%;
+    padding: 4%;
+    width: 100%;
     font-size: x-large;
 }
 
 .text>p{
     text-align: justify;
+    letter-spacing: 1px;
 }
 
 .txt a{
@@ -193,12 +258,21 @@ section h3{
     background: url("./img/jrbat.png") bottom;
 }
 
+.sep{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
 .iut,.jr{
     width: 90%;
     display: inline-flex;
     border-radius: var(--bRadius);
     padding: 2%;
-    margin: 2%;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
     background-size: cover;
 }
 
@@ -408,30 +482,26 @@ section>p{
 
 section{
     display: none;
+    justify-content: center;
 }
 
 
 #pres:target{
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 #form:target{
     display: block;
-    justify-content: center;
 }
 
 #real:target{
     display: block;
-    justify-content: center;
 }
 
 #comp:target{
     display: block;
-    justify-content: center;
 }
 
 #cont:target{
     display: block;
-    justify-content: center;
 }
