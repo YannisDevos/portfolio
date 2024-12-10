@@ -87,48 +87,14 @@ section:not(.realisations), .title{
     text-align: center;
 }
 
-.element, .presentation{
+.element, .presentation, .desc-img, .desc-p{
     border-radius: var(--bRadius);
     margin: 2%;
     padding: 1%;
 }
 
-.element{
+.element, .desc-img, .desc-p{
     background: rgba(0,0,0,0.7);
-}
-
-.desc{
-    display: flex;
-    justify-content: space-around;
-}
-
-.desc>.element{
-    max-width: max-content;
-    max-height: max-content;
-}
-
-.desc>.element>h1:not(.desc-title){
-    font-size: xx-large;
-}
-
-.desc>.element{
-    padding: 3%;
-}
-
-.desc-title{
-    font-size: xx-large;
-    color: var(--secondaryColor);
-}
-
-.desc-content>ul>li{
-    margin: 2%;
-    list-style: none;
-    font-size: x-large;
-}
-
-.desc-content>h1{
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 section>h2, .cont_title, .presentation>.title>h2{
@@ -385,7 +351,7 @@ section>p{
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides, .desc-slide {
     display: none;
     padding: 2%;
 }
@@ -407,6 +373,7 @@ section>p{
 .slide-img>img{
     border-radius: 50px;
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -430,6 +397,11 @@ section>p{
     border-radius: 5px
 }
 
+.prev {
+    left : 0;
+    border-radius: 5px
+}
+
 .slidetext {
     color: #f2f2f2;
     font-size: 25px;
@@ -446,7 +418,7 @@ section>p{
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot, .desc-dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -482,7 +454,6 @@ section>p{
 
 section{
     display: none;
-    justify-content: center;
 }
 
 
@@ -504,4 +475,74 @@ section{
 
 #cont:target{
     display: block;
+}
+
+
+
+
+
+
+
+
+
+    /*   LIKE NAVOPENED for Realisation   */
+
+
+#soq:target{
+    display: block;
+}
+
+#blizz:target{
+    display: block;
+}
+
+#lamap:target{
+    display: block;
+}
+
+#maqr:target{
+    display: block;
+}
+
+#pirattack:target{
+    display: block;
+}
+
+#kfind:target{
+    display: block;
+}
+
+.desc{
+    display: flex;
+}
+
+.desc-img{
+    width:75%;
+}
+
+.desc>.element{
+    color: var(--primaryColor);
+    width: max-content;
+    height: max-content;
+}
+
+.popup>.moi>.element>.text>p>b{
+    color: var(--secondaryColor);
+}
+
+.desc>.element{
+    width: max-content;
+}
+
+
+.maqrLogoToRevert{
+    filter: invert();
+}
+
+.desc-photo{
+    margin-top: 1%;
+}
+
+.text{
+    color: var(--primaryColor);
 }
