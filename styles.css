@@ -83,7 +83,7 @@ section{
     width: 95%;
 }
 
-section:not(.realisations), .title{
+section:not(.realisations, .popup), .title{
     text-align: center;
 }
 
@@ -163,6 +163,10 @@ section h3{
 .interest-title{
     color: var(--secondaryColor);
     padding: 2%;
+}
+
+.textList{
+    text-align: none;
 }
 
 .moi{
@@ -509,6 +513,10 @@ section{
 }
 
 #kfind:target{
+    display: block;
+}
+
+#CampTalk:target{
     display: block;
 }
 
