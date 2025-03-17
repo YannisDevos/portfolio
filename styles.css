@@ -481,6 +481,10 @@ section{
     display: block;
 }
 
+#CampTalk:target{
+    display: block;
+}
+
 
 
 
